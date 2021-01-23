@@ -1,0 +1,1428 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Pano Cloud Assignment</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            flex-wrap: wrap;
+            text-decoration: none;
+            scroll-behavior: smooth;
+            /* box-sizing: border-box; */
+        }
+
+        .nav1 {
+            display: flex;
+            background-color: rgb(37, 36, 36);
+            /* padding-left: 20px; */
+            padding-top: 10px;
+            padding-bottom: 15px;
+            padding-left: 40px;
+            padding-right: 40px;
+            /* } */
+        }
+
+        .left4 {
+            /* padding-left: 20px; */
+            margin-left: 20px;
+            background-color: rgb(70, 66, 66);
+            border-radius: 100%;
+            padding: 5px;
+            padding-right: 10px;
+            padding-left: 10px;
+            cursor: pointer;
+            /* width: 15px; */
+            align-items: center;
+            /* margin: 20px auto; */
+
+
+        }
+
+        .left4 p {
+            /* cursor: pointer; */
+            color: white;
+            /* margin: 0 auto; */
+            font-size: 20px;
+        }
+
+        .youtube {
+            font-size: 11px;
+            /* width: 20px; */
+            /* padding: 15px; */
+            /* padding-left: ; */
+            /* padding: 0; */
+            /* margin: 0 a; */
+            /* padding: 5px; */
+            /* padding-top: 0.5%; */
+            /* padding-left: 0px; */
+            cursor: pointer;
+            color: white;
+            margin-left: 20px;
+            background-color: rgb(70, 66, 66);
+            border-radius: 100%;
+            padding-top: 0.7%;
+
+        }
+
+        .right {
+            margin-left: 37%;
+            /* margin-top: 8px; */
+            color: white;
+            margin-top: 8px;
+            margin-right: 2%;
+        }
+
+        .right3 {
+            margin-top: 8px;
+            color: white;
+            margin-right: 2%;
+            /* margin-top: 20px; */
+        }
+
+        .right3 img {
+            margin-right: 10px;
+        }
+
+        .right4 input {
+            margin-top: 2px;
+            cursor: pointer;
+            height: 30px;
+            width: 120px;
+            color: white;
+            background-color: #11ad1c;
+            border: 1px solid #11ad1c;
+            border-radius: 3px;
+            flex-wrap: wrap;
+        }
+
+        .right4 input:hover {
+            background-color: green;
+            border: 1px solid green;
+        }
+
+        @media screen and (max-width: 950px) and (min-width: 200px) {
+            .nav1 {
+                padding-left: 3%;
+                /* padding-bottom: 50px; */
+
+            }
+
+            .left4 {
+
+                margin-left: 9%;
+                /* margin-left: ; */
+                margin-bottom: 3%;
+
+            }
+
+            .youtube {
+                margin-left: 9%;
+                margin-right: 2%;
+                padding-top: 2.5%;
+                padding-bottom: 5%;
+                margin-bottom: 20px;
+                padding-left: 5px;
+                padding-right: 5px;
+                /* height: 20px; */
+                /* margin-top: 10px; */
+            }
+
+            .right {
+                margin-left: -3%;
+                /* margin-right: -3%; */
+
+            }
+
+            .right3 {
+                margin-left: 2%;
+            }
+
+            .right4 {
+                margin-left: -7%;
+                margin-right: -10%;
+            }
+        }
+
+        .pana {
+            display: flex;
+            flex-wrap: wrap;
+            padding-left: 5%;
+            padding-top: 10px;
+            font-family: 'Montserrat', sans-serif;
+            text-decoration: none;
+            /* color: black; */
+        }
+
+        .pana a {
+            color: black;
+        }
+
+        .opt1 {
+            padding-top: 20px;
+            /* font-size: 18px; */
+            margin-right: 20px;
+            cursor: pointer;
+            padding-bottom: 20px;
+        }
+
+        .opt1_1 {
+            margin-left: 20%;
+        }
+
+        .opt1:hover {
+            border-bottom: 3px solid yellow;
+            font-weight: bold;
+        }
+
+        .container1 {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('./main-body-with.png');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: scroll;
+            color: white;
+            height: 500px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .h1 {
+            /* padding-left: 26.5%; */
+            font-size: 36px;
+            padding-top: 10.7%;
+            font-weight: 900;
+            /* margin: auto; */
+        }
+
+        .lorem {
+            padding-left: 20%;
+            padding-right: 20%;
+            margin-top: 25px;
+        }
+
+        .button2 {
+            margin-top: 25px;
+        }
+
+        .button2 input {
+            width: 120px;
+            /* padding-left: 10px; */
+            height: 40px;
+            background-color: rgb(255, 208, 0);
+            border: none;
+            border-bottom: 3px solid rgb(221, 182, 9);
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .button2 input:hover {
+            background-color: yellow;
+            border: 1px solid yellow;
+            border-bottom: 3px solid rgb(221, 182, 9);
+        }
+
+        .whiteboxes {
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            margin-top: 6%;
+        }
+
+        .box2 {
+            margin-right: 10px;
+            opacity: 0.5;
+        }
+
+        .box2:hover {
+            opacity: 2;
+            cursor: pointer;
+        }
+
+        .advantages {
+            font-family: 'Montserrat', sans-serif;
+            /* display: flex; */
+            margin-top: 50px;
+            background-color: white;
+            margin-bottom: 5%;
+        }
+
+        .h1_2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .h1_21 {
+            margin-right: 10px;
+            font-weight: bolder;
+            font-size: 24px;
+        }
+
+        /* .h1_22{
+            color:  #11ad1c;
+        } */
+        .lorem2 {
+            margin-top: 20px;
+            padding-left: 30%;
+            padding-right: 30%;
+            text-align: center;
+            color: grey;
+        }
+
+        .adv1 {
+            width: 17%;
+            text-align: center;
+        }
+
+        .adv1 h1 {
+            margin-top: 10px;
+            margin-bottom: 10px;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        .lorem3 {
+            color: grey;
+            padding: 2px;
+        }
+
+        .adv {
+            display: flex;
+            margin-top: 30px;
+            justify-content: space-between;
+            padding-left: 7%;
+            padding-right: 7%;
+        }
+
+        .h1_3 {
+            display: flex;
+            justify-content: center;
+            /* justify-items: center; */
+        }
+
+        .about {
+            font-family: 'Montserrat', sans-serif;
+            background-image: url('./main-icon.png');
+            padding-top: 40px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* height: 100vh; */
+            width: 100%;
+        }
+
+        .h1_31 {
+            margin-right: 20px;
+            font-size: 24px;
+            font-weight: bolder;
+            /* margin-bottom: 20px; */
+            /* margin-top: 20px; */
+            /* margin-bottom: 40px; */
+
+        }
+
+        .lorem4 {
+            margin-left: 5%;
+            margin-top: 10px;
+            width: 40%;
+            font-size: 12px;
+            line-height: 15px;
+            font-weight: bold;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            padding-top: 0px;
+        }
+
+        .lorem41 {
+            margin-bottom: 40px;
+        }
+
+        .button3 input {
+            height: 40px;
+            width: 150px;
+            background-color: rgb(255, 208, 0);
+            /* font-size: 16px; */
+            font-weight: bold;
+            border: 2px solid rgb(221, 182, 9);
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        .button3 {
+            margin-left: 5%;
+            padding-bottom: 5%;
+
+        }
+
+        .service {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 40px;
+
+        }
+
+        .lorem5 {
+            color: grey;
+            text-align: center;
+            padding-left: 21%;
+            padding-right: 21%;
+            /* margin-top: 2%; */
+        }
+
+        .servicebox {
+            padding-left: 5%;
+            padding-right: 5%;
+            display: flex;
+            margin-top: 100px;
+            justify-content: space-evenly;
+            margin-bottom: 40px;
+        }
+
+        .sbox {
+            width: 20%;
+            text-align: center;
+            background-color: #eeeeee;
+            border-radius: 5px;
+
+
+        }
+
+        .sbox h1 {
+            margin-top: 10px;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .slorem {
+            color: grey;
+            font-size: 14px;
+            padding-right: 20px;
+            padding-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        .sbutton input {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid #078610;
+            color: #078610;
+            font-size: 16px;
+            padding-bottom: 0px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+
+        .simg img {
+            margin-top: -50px;
+        }
+
+        .port {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 50px;
+            background-color: black;
+        }
+
+        .h1_5 {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .h1_51 {
+            margin-right: 20px;
+            color: white;
+            font-weight: bolder;
+            padding-bottom: 10px;
+        }
+
+        .lorem5 {
+            color: grey;
+            font-size: 12px;
+            font-weight: bold;
+            padding-left: 30%;
+            padding-right: 30%;
+        }
+
+        .nav5 {
+            margin-top: 25px;
+            display: flex;
+            color: white;
+            justify-content: center;
+            padding-bottom: 30px;
+        }
+
+        .nav51 {
+            margin-right: 20px;
+            cursor: pointer;
+
+        }
+
+        .nav51:hover {
+            color: rgb(221, 182, 9);
+            cursor: pointer;
+            /* font-weight: bold; */
+        }
+
+        .footercontainer {
+            display: flex;
+            padding-left: 10%;
+            padding-right: 10%;
+            /* margin-bottom: ; */
+
+        }
+
+        .footercontainer1 {
+            display: flex;
+            padding-top: 0px;
+            padding-left: 10%;
+            margin-top: -4px;
+            padding-bottom: 5%;
+        }
+
+        .proces {
+
+            font-family: 'Montserrat', sans-serif;
+            /* text-align: center; */
+            padding-bottom: 80px;
+
+        }
+
+        .h1_6 {
+            margin-top: 80px;
+            display: flex;
+            justify-content: center;
+            /* margin-bottom: 30px; */
+        }
+
+        .lorem6 {
+            margin-top: 40px;
+            color: grey;
+            padding-left: 30%;
+            padding-right: 30%;
+            text-align: center;
+            padding-bottom: 40px;
+        }
+
+        .circle {
+            text-align: center;
+            width: 8%;
+            /* display: flex;
+            align-content: center; */
+        }
+
+        .circle h1 {
+            margin-top: 40px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .circle p {
+            color: #808080;
+            font-size: 12px;
+            /* padding-left: 20px;
+            padding-right: 20px; */
+            width: 150%;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        .circules {
+            margin-top: 40px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .minus img {
+            width: 70px;
+            /* margin-left: -7px; */
+            /* margin-right: -17px; */
+            margin-top: 40%;
+            margin-left: 40px;
+        }
+
+        .circle h1 {
+            width: 150%;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .review {
+            font-family: 'Montserrat', sans-serif;
+            padding-top: 20px;
+            background-color: rgb(238, 238, 238);
+        }
+
+        .lorem7 {
+            color: gray;
+            padding-left: 20%;
+            padding-right: 20%;
+            text-align: center;
+            padding-top: 20px;
+
+        }
+
+        .person {
+            display: flex;
+            /* margin-left: 50px; */
+            margin-top: 5%;
+            border-bottom: 2px solid lightgray;
+            border-right: 2px solid lightgray;
+            width: 40%;
+            padding-left: 40px;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        .div7 {
+            margin-top: 1%;
+            width: 65%;
+            margin-left: 5%;
+
+        }
+
+        .div7 p {
+            margin-top: 20px;
+        }
+
+        .boxes7 {
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+        }
+
+        .person1 {
+            border-bottom: none;
+            margin-top: 0px;
+        }
+
+        .whiteboxes1 {
+            display: flex;
+            justify-items: center;
+            justify-content: center;
+            margin-top: 3%;
+            margin-bottom: 2%;
+        }
+
+        .box7 {
+            margin-right: 10px;
+            opacity: 0.7;
+        }
+
+        .box7:hover {
+            opacity: 2;
+            cursor: pointer;
+        }
+
+        .ourskills {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .start {
+            padding-top: 40px;
+            background: linear-gradient(90deg, rgba(33, 124, 5, 0.3), #477919), url('./main-body-without.png');
+            /* background-image: url('Zuni Assignments/Components/front-page/main-body-without.png'); */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            /* opacity: 0.7; */
+            font-family: 'Montserrat', sans-serif;
+
+        }
+
+        .start h1 {
+            color: white;
+            font-size: 56px;
+            font-weight: bolder;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        /* .start input{
+            height: 40px;
+            
+        } */
+        .buttons8 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .namey>input {
+            height: 40px;
+            padding-left: 10px;
+            color: gray;
+            border-radius: 10px;
+            border: none;
+            width: 200px;
+            margin-right: 30px;
+            font-size: 16px;
+            /* font-weight: bold; */
+            /* box-shadow: 1 gray; */
+        }
+
+        .inputy input {
+            height: 40px;
+            border-radius: 10px;
+            border: none;
+            width: 200px;
+            font-size: 16px;
+            font-weight: bold;
+            background-color: rgb(255, 208, 0);
+            border-bottom: 3px solid rgb(221, 182, 9);
+            cursor: pointer;
+        }
+
+        .inputy input:hover {
+            background-color: rgb(221, 182, 9);
+        }
+
+        .lorem9 {
+            margin-top: 40px;
+            color: lightgray;
+            padding-left: 20%;
+            padding-right: 20%;
+            text-align: center;
+            /* font-weight: bold; */
+            padding-bottom: 60px;
+        }
+
+        .contactus {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .lorem19_1 {
+            margin-top: 40px;
+            display: flex;
+        }
+
+        .img191 {
+            margin-left: 10%;
+            width: 3%;
+        }
+
+        .lorem191 {
+            width: 80%;
+            /* margin-right: 10%; */
+            font-size: 24px;
+        }
+
+        .phone5 {
+            color: black;
+        }
+
+        .box19 {
+            display: flex;
+            margin-left: 60px;
+        }
+
+        .phone5 {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 40px;
+
+        }
+
+        .txt19 {
+            font-size: 22px;
+            margin-left: 20px;
+        }
+
+        .last {
+            background-color: #0e9c18;
+            color: white;
+            font-family: 'Montserrat', sans-serif;
+            display: flex;
+            /* justify-items: center; */
+            padding-top: 20px;
+            padding-bottom: 40px;
+            padding-left: 10%;
+        }
+
+        .last1img {
+            padding-top: 30px;
+        }
+
+        .last1 {
+            width: 23%;
+            /* justify-content: center; */
+        }
+
+        .lastlorem {
+            margin-top: 20px;
+            font-size: 12px;
+            margin-bottom: 40px;
+        }
+
+        .last2 {
+            width: 14%;
+            /* text-align: center; */
+            margin-top: 20px;
+        }
+
+        .last2 p {
+            /* text-align: center; */
+            /* margin-left: 25%; */
+            margin-top: 13px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .p1 {
+            width: 23%;
+            border-bottom: 1px solid white;
+        }
+
+        .p2 {
+            width: 52%;
+            border-bottom: 1px solid white;
+        }
+
+        .last2>p:hover {
+            font-weight: bold;
+        }
+
+        .last3 {
+            padding-left: 40px;
+            padding-right: 40px;
+            border-left: 1px solid gainsboro;
+            border-right: 1px solid gainsboro;
+            width: 21%;
+            /* text-align: center; */
+            margin-top: 20px;
+        }
+
+        .p21 {
+            width: 51%;
+            border-bottom: 1px solid white;
+        }
+
+        .p11 {
+            border-bottom: 1px solid white;
+            width: 23%;
+        }
+
+        .last3 p {
+            /* text-align: center; */
+            /* margin-left: 25%; */
+            margin-top: 13px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+
+        .last3>p:hover {
+            font-weight: bold;
+        }
+
+        .last4 {
+            padding-left: 40px;
+        }
+
+        .last4 h2 {
+            padding-top: 20px;
+        }
+
+        .lastph1 {
+            display: flex;
+            font-size: 12px;
+
+        }
+
+        .lastphimg {
+            margin-top: 10px;
+        }
+
+        .lastphno {
+            margin-left: 5px;
+            margin-top: 10px;
+        }
+
+        .lastphimg1 {
+            margin-top: 10px;
+        }
+
+        .lastphno1 {
+            margin-left: 7px;
+            margin-top: 10px;
+            margin-bottom: 40px;
+        }
+        .lastleft{
+            background-color: transparent;
+            display: flex;
+
+        }
+        .left10{
+            border-radius: 50%;
+            background-color: rgb(34, 30, 30);
+            padding: 10px;
+            margin-right: 10px;
+            font-size: 12px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav1">
+        <div class="left4" style="margin-left: 40px;">
+            <p>f</p>
+        </div>
+        <div class="left4">
+            <p>tw</p>
+        </div>
+        <div class="left4">
+            <p>g+</p>
+        </div>
+        <div class="left4">
+            <p>in</p>
+        </div>
+        <div class=" youtube">
+            <p>Youtube</p>
+        </div>
+        <div class="right">
+            <p><img src="./telephone.svg" width="14px" height="14px">
+                +92(304)386-6719</p>
+        </div>
+        <div class="right3">
+            <p><img src="./telephone.svg" width="14px"
+                    height="14px">+92(317)011-3001</p>
+        </div>
+        <div class="right4"><input type="button" value="CALL ME BACK"></div>
+    </div>
+    <div class="pana">
+        <div class="pimg"><img src="./logo-2.png" height="60px" width="150px"></div>
+        <div class="opt1 opt1_1"><a href="#Why Us">WHY US</a></div>
+        <div class="opt1"><a href="#about us">ABOUT US</a></div>
+        <div class="opt1"><a href="#services">SERVICES</a></div>
+        <div class="opt1"><a href="#portfolio">PORTFOLIO</a></div>
+        <div class="opt1"><a href="#process">PROCESS</a></div>
+        <div class="opt1"><a href="#reviews">REVIEWS</a></div>
+        <div class="opt1"><a href="#skills">OUR SKILLS</a></div>
+        <div class="opt1"><a href="#contact">CONTACT US</a></div>
+    </div>
+    <div class="container1" id="Why US">
+        <div class="h1">
+            <h1>WE ARE EXPERTS</h1>
+        </div>
+        <div class="lorem">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non harum facilis nisi, fugiat molestias
+                quisquam magni sequi ducimus nemo similique, recusandae cum eos adipisci. Ducimus modi voluptas id
+                quaerat incidunt? Dolore beatae ratione mollitia?</p>
+        </div>
+        <div class="button2">
+            <input type="button" value="READ MORE">
+        </div>
+        <div class="whiteboxes">
+            <div class="box2"><img src="./dry-clean.svg" width="16px"
+                    height="16px"></div>
+            <div class="box2"><img src="./dry-clean.svg" width="16px"
+                    height="16px"></div>
+            <div class="box2"><img src="./dry-clean.svg" width="16px"
+                    height="16px"></div>
+        </div>
+    </div>
+    <div class="advantages">
+        <div class="h1_2">
+            <div class="h1_21">
+                <h1>OUR </h1>
+            </div>
+            <div class="h1_21 h2_22" style="color:  #078610;">
+                <h1>ADVANTAGES</h1>
+            </div>
+        </div>
+        <div class="lorem2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates nostrum nobis earum
+            illum! Tempora aut accusantium perferendis atque necessitatibus veritatis impedit iure hic tempore aperiam!
+            Vitae commodi culpa vel eius!</div>
+        <div class="adv">
+            <div class="adv1">
+                <img src="./adv-icon-1.png" height="150px" width="150px">
+                <h1>INOVATION</h1>
+                <div class="lorem3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="adv1">
+                <img src="./adv-icon-2.png" height="150px" width="150px">
+                <h1>QUALITY</h1>
+                <div class="lorem3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="adv1">
+                <img src="./adv-icon-3.png height="150px" width="150px">
+                <h1>EXPERIENCE</h1>
+                <div class="lorem3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="adv1">
+                <img src="./adv-icon-4.png" height="150px" width="150px">
+                <h1>HAPPY CLIENTS</h1>
+                <div class="lorem3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+            </div>
+            <div class="adv1">
+                <img src="./adv-icon-5.png" height="150px" width="150px">
+                <h1>SUPPORT</h1>
+                <div class="lorem3">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</div>
+            </div>
+        </div>
+    </div>
+    <div class="about" id="about us">
+        <div class="h1_3">
+            <div class="h1_31">
+                <h1>ABOUT</h1>
+            </div>
+            <div class="h1_31" style="color: #078610;">
+                <h1>US</h1>
+            </div>
+
+        </div>
+        <div class="lorem4" style="margin-top: 5%;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos assumenda soluta doloremque.
+                Accusantium quia voluptatum alias sapiente consequatur rem a sunt? Eum, iure praesentium. Possimus
+                dignissimos ipsum aliquid quos praesentium!</p>
+        </div>
+        <div class="lorem4">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos assumenda soluta doloremque.
+                Accusantium quia voluptatum alias sapiente consequatur rem a sunt? Eum, iure praesentium. Possimus
+                dignissimos ipsum aliquid quos praesentium!</p>
+        </div>
+        <div class="lorem4 lorem41">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos assumenda soluta doloremque.
+                Accusantium quia voluptatum alias sapiente consequatur rem a sunt? Eum, iure praesentium. Possimus
+                dignissimos ipsum aliquid quos praesentium!</p>
+        </div>
+        <div class="button3"><input type="button" value="READ MORE"></div>
+    </div>
+    <div class="service" id="services">
+        <div class="h1_3">
+            <div class="h1_31">
+                <h1>OUR</h1>
+            </div>
+            <div class="h1_31" style="color: #078610;">
+                <h1>SERVICES</h1>
+            </div>
+        </div>
+        <div class="lorem5">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum consequuntur soluta maxime natus nostrum
+                explicabo odit veniam. </p>
+        </div>
+        <div class="servicebox">
+            <div class="sbox">
+                <div class="simg"><img src="./our-service.png" height="100px"
+                        width="100px"></div>
+                <div class="sh1">
+                    <h1>WEB DESIGN</h1>
+                </div>
+                <div class="slorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni doloribus nam
+                    optio ipsum nulla.</div>
+                <div class="sbutton">
+                    <input type="button" value="read more">
+                </div>
+            </div>
+            <div class="sbox">
+                <div class="simg"><img src="./our-service.png" height="100px"
+                        width="100px"></div>
+                <div class="sh1">
+                    <h1>GRAPHIC DESIGN</h1>
+                </div>
+                <div class="slorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni doloribus nam
+                    optio ipsum nulla.</div>
+                <div class="sbutton">
+                    <input type="button" value="read more">
+                </div>
+            </div>
+            <div class="sbox">
+                <div class="simg"><img src="./our-service.png" height="100px"
+                        width="100px"></div>
+                <div class="sh1">
+                    <h1>BRANDING</h1>
+                </div>
+                <div class="slorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni doloribus nam
+                    optio ipsum nulla.</div>
+                <div class="sbutton">
+                    <input type="button" value="read more">
+                </div>
+            </div>
+            <div class="sbox">
+                <div class="simg"><img src="./our-service.png" height="100px"
+                        width="100px"></div>
+                <div class="sh1">
+                    <h1>MARKRTING</h1>
+                </div>
+                <div class="slorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit magni doloribus nam
+                    optio.</div>
+                <div class="sbutton">
+                    <input type="button" value="read more">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="port" id="portfolio">
+        <div class="h1_5">
+            <div class="h1_51">
+                <h1>OUR</h1>
+            </div>
+            <div class="h1_51">
+                <h1 style="color: #078610;">PORTFOLIO</h1>
+            </div>
+            <div class="lorem5">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur pariatur nostrum vitae
+                    temporibus sit, possimus laboriosam, cupiditate dolor veritatis.</p>
+            </div>
+        </div>
+        <div class="nav5">
+            <div class="nav51">WEB DESIGN</div>
+            <div class="nav51">GRAPHIC DESIGN</div>
+            <div class="nav51">BRANDING</div>
+            <div class="nav51">LOGO</div>
+            <div class="nav51">MARKETING</div>
+            <div class="nav51">ADVERTISMENT</div>
+        </div>
+        <div class="footercontainer">
+            <div class="pfooter"><img src="./footer-pic-1.png" height="200px"
+                    width="200px"></div>
+            <div class="pfooter"><img src="./footer-pic-2.png" height="200px"
+                    width="200px" alt=""></div>
+            <div class="pfooter"><img src="./footer-pic-3.png" height="200px"
+                    width="200px" alt=""></div>
+            <div class="pfooter"><img src="./footer-pic-4.png" height="200px"
+                    width="200px" alt=""></div>
+            <div class="pfooter"><img src="./footer-pic-5.png" height="200px"
+                    width="200px" alt=""></div>
+        </div>
+        <div class="footercontainer1">
+            <div class="pfooter"><img src="./footer-pic-6.png" height="200px"
+                    width="200px" alt=""></div>
+            <div class="pfooter"><img src="./footer-pic-7.png" height="200px"
+                    width="200px" alt=""></div>
+            <div class="pfooter"><img src="./footer-pic-8.png" height="200px"
+                    width="200px" alt=""></div>
+            <div class="pfooter"><img src="./footer-pic-9.png" height="200px"
+                    width="200px" alt=""></div>
+            <div class="pfooter"><img src="./footer-pic-10.png" height="200px"
+                    width="200px" alt=""></div>
+        </div>
+    </div>
+    <div class="proces" id="process">
+        <div class="h1_6">
+            <div class="h1_31">
+                <h1>OUR</h1>
+            </div>
+            <div class="h1_31" style="color: #078610;">
+                <h1>PROCESS</h1>
+            </div>
+            <div class="lorem6">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nisi dolor eveniet sunt quaerat hic soluta
+                    commodi, voluptate deleniti consequuntur praesentium autem quasi voluptas maxime necessitatibus
+                    itaque esse sequi delectus sit.</p>
+            </div>
+        </div>
+        <div class="circules">
+            <div class="circle">
+                <div class="cimg"><img src="./Circle-1.png" height="150px"
+                        width="150px"></div>
+                <h1>REQUEST CALL</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur.</p>
+            </div>
+            <div class="minus circle">
+                <img src="./minus-horizontal-straight-line.svg" width="120px">
+            </div>
+            <div class="circle">
+                <div class="cimg"><img src="./Circle-3.png" height="150px"
+                        width="150px"></div>
+                <h1>CONSULTATION</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur.</p>
+            </div>
+            <div class="minus circle">
+                <img src="./minus-horizontal-straight-line.svg" width="120px">
+            </div>
+            <div class="circle">
+                <div class="cimg"><img src="./Circle-6.png" height="150px"
+                        width="150px"></div>
+                <h1>PLANNING</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur.</p>
+            </div>
+            <div class="minus circle">
+                <img src="./minus-horizontal-straight-line.svg" width="120px">
+            </div>
+            <div class="circle">
+                <div class="cimg"><img src="./Circle-4.png" height="150px"
+                        width="150px"></div>
+                <h1>WORK PROCESS</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur.</p>
+            </div>
+            <div class="minus circle">
+                <img src="./minus-horizontal-straight-line.svg" width="120px">
+            </div>
+            <div class="circle">
+                <div class="cimg"><img src="./Circle-5.png" height="150px"
+                        width="150px"></div>
+                <h1>CORRECTING</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur.</p>
+            </div>
+            <div class="minus circle">
+                <img src="./minus-horizontal-straight-line.svg" width="120px">
+            </div>
+            <div class="circle">
+                <div class="cimg"><img src="./Circle-6.png" height="150px"
+                        width="150px"></div>
+                <h1>DELIVER</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur.</p>
+            </div>
+        </div>
+    </div>
+    <div class="review" id="reviews">
+        <div class="h1_6">
+            <div class="h1_31">
+                <h1>PEOPLE</h1>
+            </div>
+            <div class="h1_31" style="color: #078610;">
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="lorem7">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur pariatur nostrum vitae
+                    temporibus sit, possimus laboriosam, cupiditate dolor veritatis.</p>
+            </div>
+            <div class="boxes7">
+                <div class="person">
+                    <div class="img7">
+                        <img src="./people-icon.png" width="120px" height="120px">
+                    </div>
+                    <div class="div7">
+                        <h2>JONE DOE</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est asperiores dicta, qui
+                            assumenda amet animi exercitationem.</p>
+                    </div>
+                </div>
+                <div class="person" style="border-right: none;">
+                    <div class="img7">
+                        <img src="./people-icon.png" width="120px" height="120px">
+                    </div>
+                    <div class="div7">
+                        <h2>JONE DOE</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est asperiores dicta, qui
+                            assumenda amet animi exercitationem.</p>
+                    </div>
+                </div>
+                <div class="person person1">
+                    <div class="img7">
+                        <img src="./people-icon.png" width="120px" height="120px">
+                    </div>
+                    <div class="div7">
+                        <h2>JONE DOE</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est asperiores dicta, qui
+                            assumenda amet animi exercitationem.</p>
+                    </div>
+                </div>
+                <div class="person person1" style="border-right: none;">
+                    <div class="img7">
+                        <img src="./people-icon.png" width="120px" height="120px">
+                    </div>
+                    <div class="div7">
+                        <h2>JONE DOE</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab est asperiores dicta, qui
+                            assumenda amet animi exercitationem.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="whiteboxes1">
+                <div class="box7"><img src="./dry-clean (1).svg" width="16px"
+                        height="16px"></div>
+                <div class="box7"><img src="./dry-clean (1).svg" width="16px"
+                        height="16px"></div>
+                <div class="box7"><img src="./dry-clean (1).svg" width="16px"
+                        height="16px"></div>
+            </div>
+        </div>
+    </div>
+    <div class="ourskills" id="skills">
+        <div class="h1_6" style="margin-top: 40px;">
+            <div class="h1_31">
+                <h1>PEOPLE</h1>
+            </div>
+            <div class="h1_31" style="color: #078610;">
+                <h1>ABOUT US</h1>
+            </div>
+            <div class="lorem7">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur pariatur nostrum vitae
+                    temporibus sit, possimus laboriosam, cupiditate dolor veritatis.</p>
+            </div>
+        </div>
+        <section>
+            <div class="rt-container">
+                <div class="radialProgressBar progress-50">
+                    <div class="overlay">
+                        <p>45%</p>
+                    </div>
+
+                </div>
+                <div class="radialProgressBar progress-60">
+                    <div class="overlay">
+                        <p>60%</p>
+                    </div>
+                    <!-- <div>SEO & ADS</div> -->
+                </div>
+                <div class="radialProgressBar progress-70">
+                    <div class="overlay">
+                        <p>75%</p>
+                    </div>
+                </div>
+                <div class="radialProgressBar progress-80">
+                    <div class="overlay">
+                        <p>80%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="txt8">
+            <div class="p8"> </div>
+            <div class="p81">SEO & ADS</div>
+            <div class="p82">BRANDING</div>
+            <div class="p83">WEB DESIGN</div>
+        </div>
+    </div>
+    <div class="start">
+        <h1>START YOUR NEW PROJECT</h1>
+        <div class="buttons8">
+            <div class="namey">
+                <input type="text" class="yname" placeholder="YOUR NAME">
+            </div>
+            <div class="namey">
+                <input type="text" class="yname" placeholder="YOUR NAME">
+            </div>
+            <div class="namey">
+                <input type="text" class="yname" placeholder="YOUR NAME">
+            </div>
+            <div class="inputy">
+                <input type="button" value="SEND REQUEST" class="yinput">
+            </div>
+        </div>
+        <div class="lorem9">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum, delectus recusandae accusamus voluptatem
+                explicabo soluta cumque nisi aut tempore minus eius, eaque repellat excepturi beatae provident
+                blanditiis expedita? Fugit, mollitia.</p>
+        </div>
+    </div>
+    <div class="contactus" id="contact">
+        <div class="h1_6" style="margin-top: 40px;">
+            <div class="h1_31">
+                <h1>OUR</h1>
+            </div>
+            <div class="h1_31" style="color: #078610;">
+                <h1>CONTACT</h1>
+            </div>
+            <div class="lorem7">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur pariatur nostrum vitae
+                    temporibus sit, possimus laboriosam, cupiditate dolor veritatis.</p>
+            </div>
+        </div>
+        <div class="lorem19">
+            <div class="lorem19_1">
+                <div class="img191"><img src="./pin.svg" height="36px"
+                        width="28px"></div>
+                <div class="lorem191">Lorem ipsum, dolor sit amet consectetur adipisicing elit. In deleniti alias
+                    pariatur maiores </div>
+            </div>
+        </div>
+        <div class="phone5">
+            <div class="box19">
+                <div class="img192">
+                    <img src="./telephone.svg" height="28px">
+                </div>
+                <div class="txt19">(304) 386-6719</div>
+            </div>
+            <div class="box19">
+                <div class="img192">
+                    <img src="./telephone.svg" height="28px">
+                </div>
+                <div class="txt19">(317) 011-3001</div>
+            </div>
+            <div class="box19">
+                <div class="img192">
+                    <img src="./envelope.svg" height="28px">
+                </div>
+                <div class="txt19">info@website.com</div>
+            </div>
+        </div>
+    </div>
+    <div class="mainimg">
+        <img src="./footer-map.png" width="100%" height="370px">
+    </div>
+    <div class="last">
+        <div class="last1">
+            <div class="last1img">
+                <img src="./logo-1.png" height="60px" width="150px">
+            </div>
+            <div class="lastlorem">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, asperiores tenetur aliquid sapiente
+                possimus cumque ipsum nostrum debitis fugit maxime architecto eveniet quae odit laboriosam veniam
+                ducimus voluptatem eos et?
+            </div>
+            <div class="lastcopy">
+                <p>&copy; PanaCloud 2019</p>
+            </div>
+        </div>
+        <div class="last2" style="margin-left: 60px;">
+            <h2>SERVICES</h2>
+            <p class="p2"><u>Lorem Ismpus</u></p>
+            <p class="p1"><u>Lorem</u></p>
+            <p class="p2"><u>Lorem Ismpus</u></p>
+            <p class="p1"><u>Lorem</u></p>
+            <p class="p1"><u>Lorem</u></p>
+            <p class="p2"><u>Lorem Ismpus</u></p>
+            <p class="p2"><u>Lorem Ismpus</u></p>
+        </div>
+        <div class="last3">
+            <h2>USEFUL LINKS</h2>
+            <p class="p21"><u>Lorem Ismpus</u></p>
+            <p class="p11"><u>Lorem</u></p>
+            <p class="p21"><u>Lorem Ismpus</u></p>
+            <p class="p11"><u>Lorem</u></p>
+            <p class="p11"><u>Lorem</u></p>
+            <p class="p21"><u>Lorem Ismpus</u></p>
+            <p class="p21"><u>Lorem Ismpus</u></p>
+        </div>
+        <div class="last4">
+            <h2>CONTACTS</h2>
+            <div class="lastphone">
+                <div class="lastph1">
+                    <div class="lastphimg"><img src="./call.svg" height="16px">
+                    </div>
+                    <div class="lastphno">+92(304) 386-6719</div>
+                </div>
+                <div class="lastph1">
+                    <div class="lastphimg"><img src="./call.svg" height="16px">
+                    </div>
+                    <div class="lastphno">+92(317) 011-3001</div>
+                </div>
+                <div class="lastph1">
+                    <div class="lastphimg1"><img src="./envelope1.svg"
+                            height="16px"></div>
+                    <div class="lastphno1">info@website.com</div>
+                </div>
+            </div>
+            <h2>FOLLOW US</h2>
+
+            <div class="lastleft">
+                <div class="left10">
+                    <p>f</p>
+                </div>
+                <div class="left10">
+                    <p>tw</p>
+                </div>
+                <div class="left10">
+                    <p>g+</p>
+                </div>
+                <div class="left10">
+                    <p>in</p>
+                </div>
+                <div class="left10">
+                    <p>Youtube</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
